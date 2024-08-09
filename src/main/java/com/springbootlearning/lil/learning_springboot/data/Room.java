@@ -47,4 +47,14 @@ public class Room {
     public void setBedInfo(String bedInfo) {
         this.bedInfo = bedInfo;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", roomNumber='" + roomNumber + '\'' +
+                ", bedInfo='" + bedInfo + '\'' +
+                '}';
+    }
 }
