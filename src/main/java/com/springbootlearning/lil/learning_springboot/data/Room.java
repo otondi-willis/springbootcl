@@ -13,5 +13,7 @@ public class Room {
     private String name;
     @Column(name="ROOM_NUMBER")
     private String roomNumber;
-    BED_INFO CHAR(2) NOT NULL
+    @Column(name="BED_INFO")
+    private String bedInfo;
+
 }
