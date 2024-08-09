@@ -11,6 +11,7 @@ public class Room {
     private long id;
     @Column(name="NAME")
     private String name;
-    ROOM_NUMBER CHAR(2) NOT NULL UNIQUE,
+    @Column(name="ROOM_NUMBER")
+    private String roomNumber;
     BED_INFO CHAR(2) NOT NULL
 }
