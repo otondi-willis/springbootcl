@@ -1,5 +1,10 @@
 package com.springbootlearning.lil.learning_springboot.data;
 
-public interface RoomRepository {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface RoomRepository extends CrudRepository<Room, Long> {
+
 
 }
