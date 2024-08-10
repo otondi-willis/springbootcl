@@ -50,4 +50,14 @@ public class Reservation {
     public void setReservationDate(Date reservationDate) {
         this.reservationDate = reservationDate;
     }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "reservationId=" + reservationId +
+                ", roomId=" + roomId +
+                ", guestId=" + guestId +
+                ", reservationDate=" + reservationDate +
+                '}';
+    }
 }
