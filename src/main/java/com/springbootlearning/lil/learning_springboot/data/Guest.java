@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Guest {
     @Id
     @Column(name="GUEST_ID")
-    @GeneratedValue(strategy = GenerationType)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long guestId;
     @Column(name="FIRST_NAME")
     private String firstName;
@@ -15,11 +15,14 @@ public class Guest {
     private String lastName;
     @Column(name="EMAIL_ADDRESS")
     private String emailAddress;
+    @Column(name="ADDRESS")
+    private String address;
+    @Column(name="COUNTRY")
+    private String country;
+    @Column(name="STATE")
+    private String state;
 
 
-    EMAIL_ADDRESS VARCHAR(64),
-    ADDRESS VARCHAR(64),
-    COUNTRY VARCHAR(32),
     STATE VARCHAR(12),
     PHONE_NUMBER VARCHAR(24)
 }
