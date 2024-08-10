@@ -11,6 +11,8 @@ public class Reservation {
     private long reservationId;
     @Column(name="ROOM_ID")
     private long roomId;
+    @Column(name="GUEST_ID")
+    private long guestId;
 
     GUEST_ID BIGINT NOT NULL,
     RES_DATE DATE
