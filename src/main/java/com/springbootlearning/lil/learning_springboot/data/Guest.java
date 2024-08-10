@@ -1,11 +1,14 @@
 package com.springbootlearning.lil.learning_springboot.data;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+@Entity
+@Table(name="GUEST")
 public class Guest {
     @Id
-    @Table(name="GUEST")
+
     GUEST_ID BIGSERIAL PRIMARY KEY,
     FIRST_NAME VARCHAR(64),
     LAST_NAME VARCHAR(64),
