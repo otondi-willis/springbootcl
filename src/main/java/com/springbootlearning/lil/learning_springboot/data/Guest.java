@@ -9,9 +9,9 @@ public class Guest {
     @Column(name="GUEST_ID")
     @GeneratedValue(strategy = GenerationType)
     private long guestId;
+    @Column(name="FIRST_NAME")
+    private String firstName;
 
-
-    FIRST_NAME VARCHAR(64),
     LAST_NAME VARCHAR(64),
     EMAIL_ADDRESS VARCHAR(64),
     ADDRESS VARCHAR(64),
