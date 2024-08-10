@@ -21,6 +21,9 @@ public class Guest {
     private String country;
     @Column(name="STATE")
     private String state;
+    @Column(name="PHONE_NUMBER")
+    private String phoneNumber;
+
 
 
     PHONE_NUMBER VARCHAR(24)
