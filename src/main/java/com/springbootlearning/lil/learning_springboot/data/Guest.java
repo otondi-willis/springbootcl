@@ -13,6 +13,8 @@ public class Guest {
     private String firstName;
     @Column(name="LAST_NAME")
     private String lastName;
+    @Column(name="EMAIL_ADDRESS")
+    private String emailAddress;
 
 
     EMAIL_ADDRESS VARCHAR(64),
