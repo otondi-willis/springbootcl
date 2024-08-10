@@ -23,6 +23,5 @@ public class Guest {
     private String state;
 
 
-    STATE VARCHAR(12),
     PHONE_NUMBER VARCHAR(24)
 }
