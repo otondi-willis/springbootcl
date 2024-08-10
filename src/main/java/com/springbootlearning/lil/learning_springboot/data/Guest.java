@@ -1,15 +1,16 @@
 package com.springbootlearning.lil.learning_springboot.data;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="GUEST")
 public class Guest {
     @Id
+    @Column(name="GUEST_ID")
+    @GeneratedValue(strategy = GenerationType)
+    private long guestId;
 
-    GUEST_ID BIGSERIAL PRIMARY KEY,
+
     FIRST_NAME VARCHAR(64),
     LAST_NAME VARCHAR(64),
     EMAIL_ADDRESS VARCHAR(64),
