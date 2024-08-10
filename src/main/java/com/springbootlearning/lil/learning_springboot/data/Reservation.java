@@ -2,6 +2,9 @@ package com.springbootlearning.lil.learning_springboot.data;
 
 import jakarta.persistence.*;
 
+import javax.xml.crypto.Data;
+import java.util.Date;
+
 @Entity
 @Table(name="RESERVATION")
 public class Reservation {
@@ -13,8 +16,7 @@ public class Reservation {
     private long roomId;
     @Column(name="GUEST_ID")
     private long guestId;
-
-    GUEST_ID BIGINT NOT NULL,
-    RES_DATE DATE
+    @Column(name="RES_DATE")
+    private Date reservationDate;
 
 }
