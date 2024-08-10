@@ -11,8 +11,10 @@ public class Guest {
     private long guestId;
     @Column(name="FIRST_NAME")
     private String firstName;
+    @Column(name="LAST_NAME")
+    private String lastName;
 
-    LAST_NAME VARCHAR(64),
+
     EMAIL_ADDRESS VARCHAR(64),
     ADDRESS VARCHAR(64),
     COUNTRY VARCHAR(32),
