@@ -13,6 +13,10 @@ import com.frankmoley.lil.learningspring.data.Reservation;
 import com.frankmoley.lil.learningspring.data.ReservationRepository;
 import com.frankmoley.lil.learningspring.data.Room;
 import com.frankmoley.lil.learningspring.data.RoomRepository;
+import objectwithspring.data.GuestRepository;
+import objectwithspring.data.ReservationRepository;
+import objectwithspring.data.Room;
+import objectwithspring.data.RoomRepository;
 
 public class ReservationService {
     private RoomRepository roomRepository;
