@@ -8,12 +8,16 @@ import java.util.List;
 import java.util.Map;
 
 import objectwithspring.data.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ReservationService {
+    @Autowired
     private RoomRepository roomRepository;
+    @Autowired
     private GuestRepository guestRepository;
+    @Autowired
     private ReservationRepository reservationRepository;
 
     public List<RoomReservation> getRoomReservationsForDate(Date date) {
