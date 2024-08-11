@@ -16,7 +16,9 @@ public class ReservationService {
 
     public RoomRepository getRoomRepository() {
         return roomRepository;
+
     }
+    @Autowired
 
     public void setRoomRepository(RoomRepository roomRepository) {
         this.roomRepository = roomRepository;
@@ -25,7 +27,7 @@ public class ReservationService {
     public GuestRepository getGuestRepository() {
         return guestRepository;
     }
-
+@Autowired
     public void setGuestRepository(GuestRepository guestRepository) {
         this.guestRepository = guestRepository;
     }
@@ -33,7 +35,7 @@ public class ReservationService {
     public ReservationRepository getReservationRepository() {
         return reservationRepository;
     }
-
+@Autowired
     public void setReservationRepository(ReservationRepository reservationRepository) {
         this.reservationRepository = reservationRepository;
     }
