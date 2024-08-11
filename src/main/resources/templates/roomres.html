@@ -5,18 +5,18 @@
     <title>Landon Hotel: Room Reservations</title>
 </head>
 <body>
-<h1>Welcome to the Reservations Page</h1>
+<h1>Room Reservations</h1>
 <table>
     <tr>
-        <td>Room</td>
-        <td>Room Number</td>
-        <td>Guest</td>
+        <th>Room</th>
+        <th>Room Number</th>
+        <th>Guest</th>
     </tr>
-    <tr th:each="roomReservation: ${roomReservation}">
+    <tr th:each="roomReservation : ${roomReservations}">
         <td th:text="${roomReservation.roomName}">Room Name</td>
         <td th:text="${roomReservation.roomNumber}">Room Number</td>
-        <td th:text="${roomReservation.lastName}!=null? ${roomReservation.lastName} + ', ' +
-        ${roomReservation.firstName}: 'VACANT'">Guest</td>
-    </tr></table>
+        <td th:text="${roomReservation.lastName} != null? ${roomReservation.lastName} + ', ' + ${roomReservation.firstName}: 'VACANT'">Guest</td>
+    </tr>
+</table>
 </body>
 </html>
