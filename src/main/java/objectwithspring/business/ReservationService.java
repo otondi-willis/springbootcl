@@ -8,7 +8,9 @@ import java.util.List;
 import java.util.Map;
 
 import objectwithspring.data.*;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ReservationService {
     private RoomRepository roomRepository;
     private GuestRepository guestRepository;
