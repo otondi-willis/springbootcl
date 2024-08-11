@@ -13,11 +13,35 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ReservationService {
-    @Autowired
+
+    public RoomRepository getRoomRepository() {
+        return roomRepository;
+    }
+
+    public void setRoomRepository(RoomRepository roomRepository) {
+        this.roomRepository = roomRepository;
+    }
+
+    public GuestRepository getGuestRepository() {
+        return guestRepository;
+    }
+
+    public void setGuestRepository(GuestRepository guestRepository) {
+        this.guestRepository = guestRepository;
+    }
+
+    public ReservationRepository getReservationRepository() {
+        return reservationRepository;
+    }
+
+    public void setReservationRepository(ReservationRepository reservationRepository) {
+        this.reservationRepository = reservationRepository;
+    }
+
     private RoomRepository roomRepository;
-    @Autowired
+
     private GuestRepository guestRepository;
-    @Autowired
+
     private ReservationRepository reservationRepository;
 
     public List<RoomReservation> getRoomReservationsForDate(Date date) {
