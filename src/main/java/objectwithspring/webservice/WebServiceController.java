@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -23,6 +24,9 @@ public class WebServiceController {
 
     @RequestMapping(path = "/reservations", method = RequestMethod.GET)
     public List<RoomReservation> getReservation(@RequestParam(value = "date", required = false)String dateString){
+
+        Date date = this.dateUtils.createDateFromDateString(dateString);
+        return this.reservationService.getRoomReservationsForDate(date);
 
     }
 }
